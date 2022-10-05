@@ -1,0 +1,32 @@
+body{
+    background-color: #fefae0;
+}
+
+button{
+    background-color: #dda15e;
+}
+
+#busca{
+    background-color: #283618;
+    color: white;
+}
+
+h1,h2 {
+    color: #bc6c25;
+}
+
+p{
+    text-align: justify;
+}
+
+span{
+    color: #f4a261;
+}
+
+.tag{
+    color: #d90429;
+}
+
+.tercParte a{
+    color:brown;
+}

@@ -8,17 +8,66 @@
 </head>
 <body>
     <h1>Demo Forms</h1>
-    <form action="">
+    <form action="/tacos">
         <label for="usuario">Digite um usuário: </label>
-        <input id="usuario" type="text" placeholder="Usuário">
+        <input id="usuario" type="text" placeholder="Usuário" name="usuario">
         <hr>
         <label for="senha">Digite sua senha:</label>
-        <input id="senha" type="password" placeholder="Entre sua senha">
+        <input id="senha" type="password" placeholder="Entre sua senha" name="senha">
         <hr>
-        <input type="color">
-        <input type="date">
-        <input type="time">
-        <input type="number" placeholder="Digite o numero">
+        <p>
+            <input type="color" name="cor">
+            <input type="date" name="data">
+            <input type="time" name="tempo">
+            <input type="number" placeholder="Digite o numero" name="num">
+        </p>
+        <button>Enviar</button>
+    </form>
+    <p>
+        Digite o que gostaria de pesquisar no Google:
+        <form action="https://www.google.com.br/search">
+            <input type="text" name="q">
+            <button>Pesquisar</button>
+        </form>
+    </p>
+    <h2>Mais entradas</h2>
+    <form action="test">
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">Aceito os termos</label>
+        <p>
+            Tamanhos:
+            <p>
+                <label for="p">P:</label>
+                <input type="radio" name="size" id="p" value="p">
+                <label for="m">M:</label>
+                <input type="radio" name="size" id="m" value="m">
+                <label for="g">G:</label>
+                <input type="radio" name="size" id="g" value="g">
+            </p>
+        </p>
+        <button type="submit">Enviar</button>
+    </form>
+    <form action="enviarHorario">
+        <label for="hor">Selecione o horario: </label>
+        <select name="horarioAg" id="hor">
+            <option value="manha">Manha</option>
+            <option value="tarde">Tarde</option>
+            <option value="noite">Noite</option>
+        </select>
+
+        <label for="coment">Comentarios:</label>
+        <textarea name="comentarios" id="coment" cols="30" rows="2" placeholder="Comentarios"></textarea>
+        <p>
+            <label for="range">Selecione um valor: </label>
+            <input type="range" id="range" min="1" max="10" value="7" name="valor">
+        </p>
+        <button type="submit">Enviar</button>
+    </form>
+    <h2>Validação</h2>
+    <form action="/dummy">
+        <label for="first">Digite seu primeiro nome: </label>
+        <input type="text" name="firstName" id="first" minlength="3" maxlength="20" required>
+        <button>Enviar</button>
     </form>
 </body>
 </html>

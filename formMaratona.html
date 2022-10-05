@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro para corrida</title>
+</head>
+<body>
+    <h1>Registro para corrida</h1>
+    <form action="/sendData">
+        <div>
+            <label for="name">Digite seu nome:</label>
+            <input type="text" name="nome" id="name" required minlength="2">
+        </div>
+        <div>
+            <label for="sobre">Digite seu sobrenome: </label>
+            <input type="text" name="sobrenome" id="sobre" required minlength="2">
+        </div>
+        <div>
+            <p>Selecione sua corrida:</p>  
+            <div>
+                <table>
+                    <tr>
+                        <td><label for="5km">Corrida 5km:</label></td>
+                        <td><input type="radio" name="tipo" id="5km" value="fun"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="halfm">Meia Maratona</label></td>
+                        <td><input type="radio" name="tipo" id="halfm" value="half"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mar">Maratona</label></td>
+                        <td><input type="radio" name="tipo" id="mar" value="full"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div>
+            <label for="email">Digite seu email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="senha">Digite sua senha:</label>
+            <input type="password" name="senha" id="senha">
+        </div>
+        <div>
+            <label for="idade">Escolha a faixa etaria: </label>
+            <select name="faixa" id="idade" required>
+                <option value="menor18">Menor do que 18</option>
+                <option value="adulto">Entre 18 e 60</option>
+                <option value="idoso">Mais do que 60</option>
+            </select>
+        </div>
+        <button type="submit">Registrar!</button>
+    </form>
+</body>
+</html>

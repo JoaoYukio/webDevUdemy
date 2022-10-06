@@ -30,3 +30,20 @@ span{
 .tercParte a{
     color:brown;
 }
+
+h2 + p{
+    color:cadetblue;
+}
+
+input[type = "password"]{
+    color:#d90429;
+}
+
+p a:active{
+    background-color: #d90429;
+}
+
+.tercParte a:hover{
+    text-decoration: none;
+    color:orange;
+}

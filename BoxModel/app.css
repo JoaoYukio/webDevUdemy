@@ -1,0 +1,33 @@
+div{
+    width: 600px;
+    height: 170px;
+    background-color: antiquewhite;
+}
+
+h1{
+    background-color: aqua;
+    width: 200px;
+}
+
+#um{
+    background-color:#9A1663;
+    border-width: 5px;
+    border-color: #FF5858;
+    border-style: solid;
+}
+#dois{
+    background-color: rgb(224, 20, 76);
+    border: 4px solid yellow;
+}
+#tres{
+    background-color: rgb(255, 88, 88);   
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    border-left-color: #9A1663;
+    box-sizing: border-box;
+    border-radius: 10px 100px;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

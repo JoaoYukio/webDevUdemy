@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include("partials/head") %>
+	<body>
+		<%- include("partials/navbar") %>
+		<h1>Navegando em <%= name %></h1>
+		<h2><%= description %></h2>
+		<p>Subscribers: <%= subscribers %></p>
+		<hr />
+		<% posts.forEach((post) => { %>
+		<article>
+			<h3><%= post.title %></h3>
+			<h4>Author: <%= post.author %></h4>
+			<% if (post.img) { %>
+			<img src="<%= post.img %>" alt="" />
+			<% } %>
+		</article>
+		<% }) %>
+	</body>
+</html>

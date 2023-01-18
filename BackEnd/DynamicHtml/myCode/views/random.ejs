@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%- include("partials/head") %>
+	<body>
+		<%- include("partials/navbar") %>
+		<h1>Seu numero aleatorio e: <%= rand %></h1>
+
+		<% if(rand%2===0){%>
+		<h2>Numero Par!</h2>
+		<% } %>
+
+		<h3>Seu numero e: <%= rand%2===0 ? "Par!": "Impar!" %></h3>
+	</body>
+</html>
